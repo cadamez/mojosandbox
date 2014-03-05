@@ -1,99 +1,80 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-	<!-- Basic Page Needs
-  ================================================== -->
 	<meta charset="utf-8">
 	<title>Mother Jones responsive demo</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
 	<!-- Mobile Specific Metas
-  ================================================== -->
+  ==================================================
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	 -->
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/custom.css">
+	<link rel="stylesheet" href="stylesheets/homepage.less" type="text/less">
 
+	<script src="js/less-1.7.0.min.js" type="text/javascript"></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
 </head>
 
 <body>
-	<div class="container master-container">
-		<header class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 30px">Skeleton</h1>
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Politics</a></li>
-					<li><a href="#">Environment</a></li>
-					<li><a href="#">Culture</a></li>
-					<li><a href="#">Photo Essays</a></li>
-					<li><a href="#">Subscribe</a></li>
-					<li><a href="#">Donate</a></li>
-				</ul>
-			</nav>
-		<div class="row only-desktop">
-			<p class="two-thirds column alpha">Must Reads: Is the Arctic Drunk, or Does It Just Act Like This Sometimes? | Guns in America After</p>
-			<div class="one-third column omega">Search</div>
-		</div>
-		</header>
-		<br class="clear" />
-		<section id="stupid-ass-carosel" class="twelve columns">
+	<div class="center">
+	<header class="masthead">
+		<h1>Mother Jones</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Politics</a></li>
+				<li><a href="#">Environment</a></li>
+				<li><a href="#">Culture</a></li>
+				<li><a href="#">Photo Essays</a></li>
+				<li><a href="#">Subscribe</a></li>
+				<li><a href="#">Donate</a></li>
+			</ul>
+		</nav>
+		<p class="ticker">Must Reads: Is the Arctic Drunk, or Does It Just Act Like This Sometimes? | Guns in America After</p>
+		<div class="site-search">Search</div>
+	</header>
+	<div id="maincolumn">
+		<div id="stupid-ass-carosel">
 			<article class="active-horsey">
 				<img src="http://mjcdn.motherjones.com/preset_51/georgiawelcome630x354.jpg" alt="Georgia welcome center" title="" />
 				<h1><a href="#">GOP Lawmaker: We Need to Ban Sex-Selective Abortions Because of Asian Immigrants</a></h1>
 			</article>
-			<ul class="clearfix">
-				<li class="three columns alpha"><h2><a href="#">GOP Lawmaker: We Need to Ban Sex-Selective Abortions Because of Asian Immigrants</a></h2></li>
-				<li class="three columns"><h2><a href="#">How Conservatives Learned to Love Prison Reform
+			<ul>
+				<li><h2><a href="#">GOP Lawmaker: We Need to Ban Sex-Selective Abortions Because of Asian Immigrants</a></h2></li>
+				<li><h2><a href="#">How Conservatives Learned to Love Prison Reform
 				</a></h2></li>
 				<li class="three columns"><h2><a href="#">Georgia Lawmakers Want to Allow Businesses to Kick Gay People Out of Diners</a></h2></li>
 				<li class="three columns omega"><h2><a href="#">Loaded Chambers: A Brief History of Politicians Accidentally Shooting Things</a></h2></li>
 			</ul>
 		</section>
-		<aside class="four columns">
-			<section id="social-media">
-				<p>Follow MoJo</p>
-				<div class="two columns twitter alpha">Follow</div>
-				<div class="two columns facebook omega">Like</div>
-				<form class="clearfix">
-					<input type="text" placeholder="Your Email"/>
-					<input type="submit" value="Sign Up" />
-				</form>
-			</section>
-			<section>
-				<div id="big-ass-advertisement"></div>
-			</section>
-			<section>
-				<form class="clearfix">
-					<input type="text" placeholder="Your Email"/>
-					<input type="submit" value="Sign Up" />
-				</form>
-			</section>
-		</aside>
+	</div>
+	<aside class="sidebar">
+		<section id="social-media">
+			<p>Follow MoJo</p>
+			<div class="two columns twitter alpha">Follow</div>
+			<div class="two columns facebook omega">Like</div>
+			<form class="clearfix">
+				<input type="text" placeholder="Your Email"/>
+				<input type="submit" value="Sign Up" />
+			</form>
+		</section>
+		<section>
+			<div id="big-ass-advertisement"></div>
+		</section>
+		<section>
+			<form class="clearfix">
+				<input type="text" placeholder="Your Email"/>
+				<input type="submit" value="Sign Up" />
+			</form>
+		</section>
+	</aside>
 
-	</div><!-- container -->
-
-
-<!-- End Document
-================================================== -->
 </body>
 </html>

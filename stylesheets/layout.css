@@ -20,36 +20,6 @@
 /* #Page Styles
 ================================================== */
 
-img { width: 100%; }
-.container.master-container {
-	border-left: 1px solid #dedede;
-	border-right: 1px solid #dedede;
-}
-
-header nav {
-	border-bottom: 3px solid #333;
-}
-nav ul {
-	margin: 0;
-}
-nav li {
-	display: inline;
-}
-
-nav a {
-	text-decoration: none;
-	border-top: 3px solid inherit;
-	margin-right: 2em;
-}
-
-#stupid-ass-carosel h1 {
-	font-size: 2.5em;
-	line-height: 1;
-}
-#stupid-ass-carosel h2 {
-	font-size: 1em;
-	line-height: 1;
-}
 
 /* #Media Queries
 ================================================== */

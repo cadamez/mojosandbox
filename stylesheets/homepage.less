@@ -1,0 +1,83 @@
+@import 'reset.css';
+@import 'less/grid.less';
+//@import 'less/base.less';
+//@import 'layout.css';
+
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+// Remove the definition below for a pixel-based layout
+//@total-width: 100%;
+
+////////////
+// LAYOUT //
+////////////
+
+// center the contents
+div.center {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.masthead {
+	.ticker { .column(9); }
+	.site-search { .column(3); }
+}
+// main column
+#maincolumn {
+	.column(8);
+}
+
+// sidebar
+aside.sidebar {
+	.column(4);
+}
+
+/* ---------- Styles ----------*/
+
+img { width: 100%; }
+
+.masthead {
+	nav {
+	border-bottom: 3px solid #333;
+		ul {
+			margin: 0;
+		}
+		li {
+			display: inline;
+		}
+
+		a {
+			text-decoration: none;
+			border-top: 3px solid inherit;
+			margin-right: 2em;
+		}
+	}
+}
+
+/* --------- The damned carosel ---------- */
+
+#stupid-ass-carosel {
+	h1 {
+		font-size: 2.5em;
+		line-height: 1;
+	}
+	h2 {
+		font-size: 1em;
+		line-height: 1;
+	}
+	ul {
+		.row(8);
+		li {
+			.column(2,8);
+			margin-bottom: 1em;
+		}
+	}
+}
