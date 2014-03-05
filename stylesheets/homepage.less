@@ -27,8 +27,8 @@ div.center {
 }
 
 .masthead {
-	.ticker { .column(9); }
-	.site-search { .column(3); }
+	.ticker { .column(8); }
+	.site-search { .column(4); }
 }
 // main column
 #maincolumn {
@@ -45,6 +45,7 @@ aside.sidebar {
 img { width: 100%; }
 
 .masthead {
+	.clearfix();
 	nav {
 	border-bottom: 3px solid #333;
 		ul {
@@ -73,11 +74,11 @@ img { width: 100%; }
 		font-size: 1em;
 		line-height: 1;
 	}
-	ul {
-		.row(8);
-		li {
-			.column(2,8);
-			margin-bottom: 1em;
-		}
-	}
+	//ul {
+	//	.row(8);
+	//	li {
+	//		.column(1,4);
+	//		margin-bottom: 1em;
+	//	}
+	//}
 }
