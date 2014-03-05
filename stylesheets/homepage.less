@@ -1,6 +1,6 @@
 @import 'reset.css';
 @import 'less/grid.less';
-//@import 'less/base.less';
+@import 'less/base.less';
 //@import 'layout.css';
 
 //////////
@@ -67,18 +67,27 @@ img { width: 100%; }
 
 #stupid-ass-carosel {
 	h1 {
-		font-size: 2.5em;
+		font-size: 1.8em;
 		line-height: 1;
+		padding: 0.5em;
 	}
 	h2 {
 		font-size: 1em;
 		line-height: 1;
 	}
-	//ul {
-	//	.row(8);
-	//	li {
-	//		.column(1,4);
-	//		margin-bottom: 1em;
-	//	}
-	//}
+	.active-horsey {
+		background-color: black;
+		a { 
+			color: white;
+			text-decoration: none;
+		}
+	}
+	ul {
+		.row(8);
+		li {
+			.column(2,4);
+			img{ border: 3px solid transparent;}
+			img.active { border: 3px solid black;}
+		}
+	}
 }
