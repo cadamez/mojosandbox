@@ -9,8 +9,8 @@
 
 // Specify the number of columns and set column and gutter widths
 @columns: 12;
-@column-width: 60;
-@gutter-width: 20;
+@column-width: 70;
+@gutter-width: 10;
 
 // Remove the definition below for a pixel-based layout
 //@total-width: 100%;
@@ -35,6 +35,16 @@ div.center {
 	.column(8);
 }
 
+#more-top-stories { 
+	.column(4);
+	li {
+		.row(4);
+		margin-bottom: 0.5em;
+	}
+	img { .column(2); }
+	p { .column(2); }
+}
+
 // sidebar
 aside.sidebar {
 	.column(4);
@@ -42,7 +52,7 @@ aside.sidebar {
 
 /* ---------- Styles ----------*/
 
-img { width: 100%; }
+//img { width: 100%; }
 
 .masthead {
 	.clearfix();
