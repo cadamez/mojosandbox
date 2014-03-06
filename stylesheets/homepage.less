@@ -3,6 +3,14 @@
 @import 'less/base.less';
 //@import 'layout.css';
 
+///// Colors
+@red: 		#E12300;
+@blue: 		#009DDD;
+@green: 	#70BF4F;
+@yellow: 	#F8AE16;
+@purple: 	#C9AFFF;
+@grey: 		#8E8E8D;
+
 //////////
 // GRID //
 //////////
@@ -35,15 +43,31 @@ div.center {
 	.column(8);
 }
 
-#more-top-stories { 
-	.column(4);
+//column sizes for easy reuse
+.widecol { 
+	.column(5);
 	li {
-		.row(4);
-		margin-bottom: 0.5em;
+		.row(5);
+		//margin-bottom: 0.5em;
 	}
 	img { .column(2); }
 	p { .column(2); }
 }
+.narrowcol {
+	.push(1);
+	.column(2);
+
+	li {
+		.row(2);
+		margin-bottom: 0.5em;
+	}
+	img { .column(1); }
+	p { .column(1); }
+
+}
+
+#more-top-stories { .widecol(); } 
+#contributors { .narrowcol(); } 
 
 // sidebar
 aside.sidebar {
@@ -70,6 +94,21 @@ aside.sidebar {
 			border-top: 3px solid inherit;
 			margin-right: 2em;
 		}
+	}
+}
+
+/* --- Collection style --- */
+section {
+	h2 { 
+		color: @red;
+		font-family: sans-serif; //change to whatever we're using
+		text-transform: uppercase;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+	h3 a {
+		font-size: 1rem;
+		line-height: 1;
 	}
 }
 
