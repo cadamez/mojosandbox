@@ -24,11 +24,22 @@
 /* #Media Queries
 ================================================== */
 
+	/* Large screens */
+	@media only screen and (min-width: 960px) {
+
+		div.center {
+			width: 960px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+	}
+
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
-	.only-desktop {
-		display: none;
-	}
+
+		.masthead .ticker {
+			display: none;
+		}
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
